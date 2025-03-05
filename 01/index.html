@@ -14,8 +14,8 @@
     <div class="mx-auto flex max-w-md flex-col gap-y-10">
       <div class="rounded-4xl bg-white/15 p-3 outline -outline-offset-1 outline-white/25">
 
-        <!-- Take parent border radius (2rem) minus padding (0.75rem) )  -->
-        <img class="aspect-5/6 rounded-[1.25rem] bg-gray-800 object-cover shadow-2xl outline -outline-offset-1 outline-white/25" src="https://thispersondoesnotexist.com/" alt="">
+        <!-- Use Tailwind variables to calculate value  -->
+        <img class="aspect-5/6 rounded-[calc(var(--radius-4xl)-(--spacing(3)))] bg-gray-800 object-cover shadow-2xl outline -outline-offset-1 outline-white/25" src="https://thispersondoesnotexist.com/" alt="">
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sunt inventore mollitia a expedita eveniet
         unde reiciendis, alias quasi culpa fuga vero architecto cumque in.</p>
