@@ -12,10 +12,13 @@
 
   <div class="bg-gray-950 px-8 py-16 text-white h-screen">
     <div class="mx-auto flex max-w-md flex-col gap-y-10">
-      <div class="rounded-4xl bg-white/15 p-3 outline -outline-offset-1 outline-white/25">
+      <div class="rounded-(--card-radius) bg-white/15 p-(--card-padding) outline -outline-offset-1 outline-white/25
+        [--card-radius:var(--radius-4xl)]
+        [--card-padding:--spacing(3)]
+      ">
 
         <!-- Use Tailwind variables to calculate value  -->
-        <img class="aspect-5/6 rounded-[calc(var(--radius-4xl)-(--spacing(3)))] bg-gray-800 object-cover shadow-2xl outline -outline-offset-1 outline-white/25" src="https://thispersondoesnotexist.com/" alt="">
+        <img class="aspect-5/6 rounded-[calc(var(--card-radius)-var(--card-padding))] bg-gray-800 object-cover shadow-2xl outline -outline-offset-1 outline-white/25" src="https://thispersondoesnotexist.com/" alt="">
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sunt inventore mollitia a expedita eveniet
         unde reiciendis, alias quasi culpa fuga vero architecto cumque in.</p>
