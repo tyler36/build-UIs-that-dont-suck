@@ -7,3 +7,5 @@ This is repository containing the lessons from [Build UIs That Don't Suck](https
 ## 01 - Rounding corners with science and CSS variables
 
 Generate dynamic border radiuses that are mathematically correct.
+
+## 02 - So you think you can center things?
