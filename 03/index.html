@@ -12,13 +12,12 @@
     <div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 bg-white/50 px-4 backdrop-blur-xs transition">
       <div class="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition"></div>
       <div class="flex items-center gap-5">
-        <!-- This solution makes the button responsible for correcting it size change. -->
-        <button type="button" class="-m-3 relative flex size-12 items-center justify-center bg-blue-500/15" aria-label="Toggle navigation">
-          <span class="flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/15">
-            <svg viewBox="0 0 10 9" fill="none" stroke-linecap="round" aria-hidden="true" class="w-2.5 stroke-zinc-900">
-              <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
-            </svg>
-          </span>
+        <!-- Add an invisible span to increase the touch area. It is automatically centered because it parent is. -->
+        <button type="button" class="relative flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/15" aria-label="Toggle navigation">
+          <span class="absolute size-12"></span>
+          <svg viewBox="0 0 10 9" fill="none" stroke-linecap="round" aria-hidden="true" class="w-2.5 stroke-zinc-900">
+            <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
+          </svg>
         </button>
         <a aria-label="Home" href="/">
           <svg viewBox="0 0 99 24" aria-hidden="true" class="h-6">
