@@ -12,9 +12,12 @@
     <div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 bg-white/50 px-4 backdrop-blur-xs transition">
       <div class="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition"></div>
       <div class="flex items-center gap-5">
-        <button type="button" class="relative flex items-center justify-center size-6 rounded-md transition" aria-label="Toggle navigation">
-        <!-- Add classes to span to center it on the its parent. Technically not needed here, because parent is centered. -->
-          <span class="absolute size-12 top-1/2 left-1/2 -translate-1/2"></span>
+        <button type="button" class="cursor-pointer relative flex items-center justify-center size-6 rounded-md transition" aria-label="Toggle navigation">
+          <!--
+            Hide the span when user is using a mouse. This prevents the mouse triggering too early on desktops,
+            but allows for increased trigger area on phones and tablets (which would trigger if we hide on viewport size).
+          -->
+          <span class="absolute size-12 top-1/2 left-1/2 -translate-1/2 [@media(pointer:fine)]:hidden"></span>
           <svg viewBox="0 0 10 9" fill="none" stroke-linecap="round" aria-hidden="true" class="w-2.5 stroke-zinc-900">
             <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
           </svg>
