@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header>
+  <div>
+    <div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 bg-white/50 px-4 backdrop-blur-xs transition">
+      <div class="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition"></div>
+      <div class="flex items-center gap-5">
+        <button type="button" class="relative flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/15" aria-label="Toggle navigation">
+          <span class="absolute top-1/2 left-1/2 size-12 -translate-1/2 [@media(pointer:fine)]:hidden"></span>
+          <svg viewBox="0 0 10 9" fill="none" stroke-linecap="round" aria-hidden="true" class="w-2.5 stroke-zinc-900">
+            <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
+          </svg>
+        </button>
+        <a aria-label="Home" href="/">
+          <svg viewBox="0 0 99 24" aria-hidden="true" class="h-6">
+            <path class="fill-emerald-400" d="M16 8a5 5 0 0 0-5-5H5a5 5 0 0 0-5 5v13.927a1 1 0 0 0 1.623.782l3.684-2.93a4 4 0 0 1 2.49-.87H11a5 5 0 0 0 5-5V8Z"></path>
+            <path class="fill-zinc-900" d="M26.538 18h2.654v-3.999h2.576c2.672 0 4.456-1.723 4.456-4.333V9.65c0-2.61-1.784-4.333-4.456-4.333h-5.23V18Zm4.58-10.582c1.52 0 2.416.8 2.416 2.241v.018c0 1.441-.896 2.25-2.417 2.25h-1.925V7.418h1.925ZM38.051 18h2.566v-5.414c0-1.371.923-2.206 2.382-2.206.396 0 .791.061 1.178.15V8.287a3.843 3.843 0 0 0-.958-.123c-1.257 0-2.136.615-2.443 1.661h-.159V8.323h-2.566V18Zm11.55.202c2.979 0 4.772-1.88 4.772-5.036v-.018c0-3.128-1.82-5.036-4.773-5.036-2.953 0-4.772 1.916-4.772 5.036v.018c0 3.146 1.793 5.036 4.772 5.036Zm0-2.013c-1.372 0-2.145-1.116-2.145-3.023v-.018c0-1.89.782-3.023 2.144-3.023 1.354 0 2.145 1.134 2.145 3.023v.018c0 1.907-.782 3.023-2.145 3.023Zm10.52 1.846c.492 0 .967-.053 1.283-.114v-1.907a6.057 6.057 0 0 1-.755.044c-.87 0-1.24-.387-1.24-1.257v-4.544h1.995V8.323H59.41V6.012h-2.592v2.311h-1.495v1.934h1.495v5.133c0 1.88.949 2.645 3.304 2.645Zm7.287.167c2.98 0 4.772-1.88 4.772-5.036v-.018c0-3.128-1.82-5.036-4.772-5.036-2.954 0-4.773 1.916-4.773 5.036v.018c0 3.146 1.793 5.036 4.773 5.036Zm0-2.013c-1.372 0-2.145-1.116-2.145-3.023v-.018c0-1.89.782-3.023 2.145-3.023 1.353 0 2.144 1.134 2.144 3.023v.018c0 1.907-.782 3.023-2.144 3.023Zm10.767 2.013c2.522 0 4.034-1.353 4.297-3.463l.01-.053h-2.374l-.017.036c-.229.966-.853 1.467-1.908 1.467-1.37 0-2.135-1.08-2.135-3.04v-.018c0-1.934.755-3.006 2.135-3.006 1.099 0 1.74.615 1.908 1.556l.008.017h2.391v-.026c-.228-2.162-1.749-3.56-4.315-3.56-3.033 0-4.738 1.837-4.738 5.019v.017c0 3.217 1.714 5.054 4.738 5.054Zm10.257 0c2.98 0 4.772-1.88 4.772-5.036v-.018c0-3.128-1.82-5.036-4.772-5.036-2.953 0-4.773 1.916-4.773 5.036v.018c0 3.146 1.793 5.036 4.773 5.036Zm0-2.013c-1.371 0-2.145-1.116-2.145-3.023v-.018c0-1.89.782-3.023 2.145-3.023 1.353 0 2.144 1.134 2.144 3.023v.018c0 1.907-.782 3.023-2.144 3.023ZM95.025 18h2.566V4.623h-2.566V18Z"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="flex items-center gap-5">
+        <div class="flex gap-4">
+          <div>
+            <button type="button" class="flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/10" aria-label="Find something...">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="h-5 w-5 stroke-zinc-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.01 12a4.25 4.25 0 1 0-6.02-6 4.25 4.25 0 0 0 6.02 6Zm0 0 3.24 3.25"></path>
+              </svg>
+            </button>
+          </div>
+          <button type="button" class="flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/10" aria-label="Switch to dark theme">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="h-5 w-5 stroke-zinc-900">
+              <path d="M12.5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path>
+              <path stroke-linecap="round" d="M10 5.5v-1M13.182 6.818l.707-.707M14.5 10h1M13.182 13.182l.707.707M10 15.5v-1M6.11 13.889l.708-.707M4.5 10h1M6.11 6.111l.708.707"></path>
+            </svg>
+          </button>
+        </div>
+        <a class="inline-flex justify-center gap-0.5 overflow-hidden rounded-full bg-zinc-900 px-3 py-1 text-sm/6 font-medium text-white transition hover:bg-zinc-700" href="#">Sign in</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="relative flex h-full flex-col px-4 pt-14">
+  <main class="flex-auto">
+    <article class="flex h-full flex-col pt-16 pb-10">
+      <div class="mx-auto max-w-2xl flex-auto">
+        <div class="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
+          <div class="absolute top-0 left-1/2 ml-[-38rem] h-[25rem] w-[81.25rem]">
+            <div class="absolute inset-0 bg-linear-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
+              <svg aria-hidden="true" class="/2.5 /5 absolute inset-x-0 inset-y-[-50%] h-[200%] w-full skew-y-[-18deg] fill-black/40 stroke-black/50 mix-blend-overlay">
+                <defs>
+                  <pattern id=":S1:" width="72" height="56" patternUnits="userSpaceOnUse" x="-12" y="4">
+                    <path d="M.5 56V.5H72" fill="none"></path>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#:S1:)"></rect>
+                <svg x="-12" y="4" class="overflow-visible">
+                  <rect stroke-width="0" width="73" height="57" x="288" y="168"></rect>
+                  <rect stroke-width="0" width="73" height="57" x="144" y="56"></rect>
+                  <rect stroke-width="0" width="73" height="57" x="504" y="168"></rect>
+                  <rect stroke-width="0" width="73" height="57" x="720" y="336"></rect>
+                </svg>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-2xl/8 font-bold text-zinc-950">API Documentation</h1>
+        <p class="mt-2 text-base/7 text-zinc-700">Use the Protocol API to access contacts, conversations, group messages, and more and seamlessly integrate your product into the workflows of dozens of devoted Protocol users.</p>
+        <div class="mt-6 mb-16 flex gap-3">
+          <a class="inline-flex justify-center gap-0.5 overflow-hidden rounded-full bg-zinc-900 px-3 py-1 text-sm/6 font-medium text-white transition hover:bg-zinc-700" href="/quickstart">
+            Quickstart<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="mt-0.5 -mr-1 h-5 w-5">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"></path>
+            </svg>
+          </a>
+          <a class="inline-flex justify-center gap-0.5 overflow-hidden rounded-full px-3 py-1 text-sm/6 font-medium text-zinc-700 ring-1 ring-zinc-900/10 transition ring-inset hover:bg-zinc-900/2.5 hover:text-zinc-900" href="/sdks">Explore SDKs</a>
+        </div>
+        <h2 class="scroll-mt-24 text-lg/7 font-semibold text-zinc-900" id="getting-started">Getting started</h2>
+        <p class="lead mt-2 mb-6 text-base/7 text-zinc-700">
+          To get started, create a new application in your
+          <a href="#" class="font-medium text-emerald-500">developer settings</a>, then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our
+          <a href="#" class="font-medium text-emerald-500">integrations directory</a>
+          to reach the Protocol community.
+        </p>
+        <div>
+          <a class="inline-flex justify-center gap-0.5 overflow-hidden text-sm/6 font-medium text-emerald-500 transition hover:text-emerald-600" href="/sdks"
+            >Get your API key<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="relative top-px mt-0.5 -mr-1 h-5 w-5">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"></path></svg
+          ></a>
+        </div>
+      </div>
+    </article>
+  </main>
+</div>
+
+</body>
+</html>

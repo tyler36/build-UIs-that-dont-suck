@@ -9,3 +9,7 @@ This is repository containing the lessons from [Build UIs That Don't Suck](https
 Generate dynamic border radiuses that are mathematically correct.
 
 ## 02 - So you think you can center things?
+
+## 03 - What are these, buttons for ants?
+
+<https://www.youtube.com/watch?v=soFSSkf4oVY>
