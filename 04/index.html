@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex flex-1 flex-col pb-2">
+      <div class="grow p-6">
+        <div class="mx-auto max-w-6xl">
+          <div class="flex items-end justify-between gap-4">
+            <h1 class="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8">
+              Orders
+            </h1>
+          </div>
+          <table
+            class="mt-8 min-w-full text-left text-sm/6 whitespace-nowrap text-zinc-950"
+          >
+            <thead class="text-zinc-500">
+              <tr>
+                <th
+                  class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-1 last:pr-1"
+                >
+                  Order number
+                </th>
+                <th
+                  class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-1 last:pr-1"
+                >
+                  Purchase date
+                </th>
+                <th
+                  class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-1 last:pr-1"
+                >
+                  Customer
+                </th>
+                <th
+                  class="border-b border-b-zinc-950/10 px-4 py-2 text-right font-medium first:pl-1 last:pr-1"
+                >
+                  Amount
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3000
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  May 9, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Leslie Alexander
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3001
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  May 5, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Michael Foster
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$299.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3002
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 28, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Dries Vincent
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$150.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3003
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 23, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Lindsay Walton
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3004
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 18, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Courtney Henry
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3005
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 14, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Tom Cook
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$299.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3006
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 10, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Whitney Francis
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$150.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3007
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 6, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Leonard Krasner
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3008
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Apr 3, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Floyd Miles
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3009
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 29, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Emily Selman
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3010
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 25, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Kristin Watson
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$299.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3011
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 21, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Emma Dorsey
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3012
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 16, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Alicia Bell
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$150.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3013
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 12, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Jenny Wilson
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$299.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3014
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 8, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Anna Roberts
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$150.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3015
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Mar 4, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Benjamin Russel
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$150.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3016
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 28, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Jeffrey Webb
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3017
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 23, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Kathryn Murphy
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3018
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 19, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Lawrence Hunter
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3019
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 15, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Yvette Armstrong
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3020
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 10, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Angela Fisher
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$299.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3021
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 5, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Blake Reid
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$80.00
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3022
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Feb 1, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Hector Gibbons
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3023
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Jan 27, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Fabricio Mendes
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Jan 22, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Jillian Steward
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  3025
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-zinc-500 first:pl-1 last:pr-1"
+                >
+                  Jan 18, 2024
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 first:pl-1 last:pr-1"
+                >
+                  Chelsea Hagon
+                </td>
+                <td
+                  class="relative border-b border-zinc-950/5 px-4 py-4 text-right first:pl-1 last:pr-1"
+                >
+                  US$114.99
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

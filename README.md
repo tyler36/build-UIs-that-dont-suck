@@ -13,3 +13,7 @@ Generate dynamic border radiuses that are mathematically correct.
 ## 03 - What are these, buttons for ants?
 
 <https://www.youtube.com/watch?v=soFSSkf4oVY>
+
+## 04 - Responsive tables that don't suck
+
+<https://www.youtube.com/watch?v=v9nHYcKeBw0>
