@@ -17,3 +17,7 @@ Generate dynamic border radiuses that are mathematically correct.
 ## 04 - Responsive tables that don't suck
 
 <https://www.youtube.com/watch?v=v9nHYcKeBw0>
+
+## 05 - Dropdowns, icons, and CSS sub-grid
+
+<https://www.youtube.com/watch?v=7d0qmca5kzc>
