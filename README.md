@@ -12,6 +12,8 @@ Generate dynamic border radiuses that are mathematically correct.
 
 ## 02 - So you think you can center things?
 
+<https://www.youtube.com/watch?v=5QTHG99OYS4>
+
 ## 03 - What are these, buttons for ants?
 
 <https://www.youtube.com/watch?v=soFSSkf4oVY>
