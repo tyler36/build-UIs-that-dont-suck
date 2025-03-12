@@ -8,6 +8,8 @@ This is repository containing the lessons from [Build UIs That Don't Suck](https
 
 Generate dynamic border radiuses that are mathematically correct.
 
+<https://www.youtube.com/watch?v=-h9rH539x1k>
+
 ## 02 - So you think you can center things?
 
 ## 03 - What are these, buttons for ants?
